@@ -1,0 +1,227 @@
+.intro {
+    background: blue;
+    color: #f2f2f2;
+    text-align: center;
+}
+/* styles for the first div with its media query*/
+.background {
+    background-image: url(./images/1stone.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    height: 500px; 
+    position: relative;
+  }
+  
+  .background h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(252, 247, 247); 
+    text-align: center; 
+    font-size: 3rem; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .background p {
+    position: absolute;
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(62, 40, 227); 
+    text-align: center; 
+    font-size: 1.5rem; 
+  }
+  @media only screen and (max-width: 600px) {
+    .background {
+      height: 300px;
+    }
+  
+    .background h1 {
+      font-size: 2rem;
+    }
+    .background p {
+        font-size: 1rem;
+        top: 70%;
+      }
+  }
+/* style for the second div with its media query */
+.promo {
+    background-image: url(change.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    height: 500px; 
+    position: relative;
+  }
+  
+  .promo-content {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: rgb(76, 89, 239); 
+    
+  }
+  
+  .promo-content h2 {
+    font-size: 3rem; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .promo-content p {
+    font-size: 1.5rem; 
+    margin-bottom: 1.5rem;
+    color: black; 
+  }
+  
+  .promo-content button {
+    background-color: rgb(132, 118, 118); 
+    color: black; 
+    padding: 1rem 2rem; 
+    font-size: 1.5rem; 
+    border: 1px solid; 
+    border-radius: 0.5rem; 
+    cursor: pointer; 
+  }
+  .promo-content button:hover {
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid red;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .promo {
+      height: 300px;
+    }
+  
+    .promo-content h2 {
+      font-size: 2rem;
+    }
+  
+    .promo-content p {
+      font-size: 1rem;
+    }
+  
+    .promo-content button {
+      font-size: 1rem;
+    }
+  }
+  /*@media only screen and (min-width: 992px) {
+    #space h2 {
+      padding-bottom: 20%;
+    }
+    #image img {
+        height: 70%;
+        margin-left: 30%;
+    }
+  }*/
+  .content-container {
+    background-image: url(./images/down-below.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .content-container h1,
+  .content-container p {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .shipping-returns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .shipping, .returns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .shipping img, .returns img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .shipping p, .returns p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .info p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info p:not(:first-child) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+    }
+  
+    .info p:first-child {
+      font-size: 24px;
+    }
+  
+    .info p:not(:first-child) {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info p:first-child {
+      font-size: 20px;
+    }
+  
+    .info p:not(:first-child) {
+      font-size: 16px;
+    }
+  }
+  
+  
